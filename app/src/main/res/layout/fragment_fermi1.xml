@@ -30,7 +30,7 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/alien1" />
+                 />
 
             <ProgressBar
                 android:id="@+id/progressBarAlien1"
@@ -51,7 +51,7 @@
                 android:fontFamily="@font/assistant"
                 android:padding="5dp"
                 android:text="@string/fermi_page1"
-                android:textAlignment="textStart"
+                android:textAlignment="viewStart"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"

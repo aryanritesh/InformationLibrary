@@ -6,4 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".Activities.FermiActivity">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutFermi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C5CBF1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#D5A0A0"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#FF90B6" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerFermi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayoutFermi" />
 </androidx.constraintlayout.widget.ConstraintLayout>

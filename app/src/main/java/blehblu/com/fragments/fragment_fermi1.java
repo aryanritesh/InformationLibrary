@@ -18,6 +18,9 @@ import com.squareup.picasso.Picasso;
 import blehblu.com.R;
 
 public class fragment_fermi1 extends Fragment {
+    public static fragment_fermi1 newInstance(){
+        return new fragment_fermi1();
+    }
     private ImageView imgviewFermi1;
     private ProgressBar progressBarFermi1;
     @Nullable
