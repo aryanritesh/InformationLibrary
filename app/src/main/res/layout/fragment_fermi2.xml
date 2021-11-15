@@ -25,12 +25,11 @@
                 android:layout_marginEnd="5dp"
                 android:background="@drawable/img_frame"
                 android:padding="3dp"
-                android:scaleType="center"
+                android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                 />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ProgressBar
                 android:id="@+id/progressBarfermi2"
@@ -50,7 +49,7 @@
                 android:layout_marginEnd="7dp"
                 android:fontFamily="@font/assistant"
                 android:padding="5dp"
-                android:text="@string/fermi_page1"
+                android:text="@string/fermi_page2"
                 android:textAlignment="viewStart"
                 android:textColor="#000000"
                 android:textSize="20sp"

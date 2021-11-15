@@ -17,28 +17,28 @@ import com.squareup.picasso.Picasso;
 
 import blehblu.com.R;
 
-public class fragment_fermi1 extends Fragment {
-    public static fragment_fermi1 newInstance(){
-        return new fragment_fermi1();
+public class fragment_fermi2 extends Fragment {
+    public static fragment_fermi2 newInstance(){
+        return new fragment_fermi2();
     }
-    private ImageView imgviewFermi1;
-    private ProgressBar progressBarFermi1;
+    private ImageView imgviewFermi2;
+    private ProgressBar progressBarFermi2;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_fermi1,container,false);
-        imgviewFermi1=view.findViewById(R.id.alien2);
-        progressBarFermi1=view.findViewById(R.id.progressBarfermi2);
-        Picasso.get().load("https://images6.alphacoders.com/375/375798.jpg").into(imgviewFermi1, new Callback() {
+        View view=inflater.inflate(R.layout.fragment_fermi2,container,false);
+        imgviewFermi2=view.findViewById(R.id.alien2);
+        progressBarFermi2=view.findViewById(R.id.progressBarfermi2);
+        Picasso.get().load("https://i.pinimg.com/originals/f5/f7/29/f5f729edca86d5b013e2443496e04968.jpg").into(imgviewFermi2, new Callback() {
             @Override
             public void onSuccess() {
-                progressBarFermi1.setVisibility(View.INVISIBLE);
+                progressBarFermi2.setVisibility(View.INVISIBLE);
             }
 
             @Override
             public void onError(Exception e) {
                 Toast.makeText(getActivity(),e.getLocalizedMessage(),Toast.LENGTH_LONG).show();
-                progressBarFermi1.setVisibility(View.INVISIBLE);
+                progressBarFermi2.setVisibility(View.INVISIBLE);
 
             }
         });

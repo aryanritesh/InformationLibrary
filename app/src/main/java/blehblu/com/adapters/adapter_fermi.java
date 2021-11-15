@@ -7,6 +7,7 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import blehblu.com.fragments.fragment_fermi1;
+import blehblu.com.fragments.fragment_fermi2;
 
 public class adapter_fermi extends FragmentStateAdapter {
 
@@ -22,6 +23,9 @@ public class adapter_fermi extends FragmentStateAdapter {
             case 0:
                 fragment= fragment_fermi1.newInstance();
                 break;
+            case 1:
+                fragment= fragment_fermi2.newInstance();
+                break;
             default:
                 return null;
         }
@@ -30,6 +34,6 @@ public class adapter_fermi extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 1;
+        return 2;
     }
 }

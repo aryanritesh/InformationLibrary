@@ -32,6 +32,10 @@ public class FermiActivity extends AppCompatActivity {
                     case 0:
                         tab.setText("About");
                         break;
+                    case 1:
+                        tab.setText("Basis");
+                        break;
+
                 }
             }
         });
