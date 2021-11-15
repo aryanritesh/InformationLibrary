@@ -1,8 +1,10 @@
-package blehblu.com;
+package blehblu.com.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import blehblu.com.R;
 
 public class FermiActivity extends AppCompatActivity {
 

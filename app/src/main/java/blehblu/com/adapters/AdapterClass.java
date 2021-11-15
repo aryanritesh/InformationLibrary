@@ -1,4 +1,4 @@
-package blehblu.com;
+package blehblu.com.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,11 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
+
+import blehblu.com.Activities.FermiActivity;
+import blehblu.com.Activities.WondersActivity;
+import blehblu.com.ModelClassWonder;
+import blehblu.com.R;
 
 public class AdapterClass extends RecyclerView.Adapter<AdapterClass.CardViewHolder>{
     private ArrayList<ModelClassWonder> modelList;
@@ -44,11 +48,11 @@ public class AdapterClass extends RecyclerView.Adapter<AdapterClass.CardViewHold
         @Override
         public void onClick(View view) {
             if(position==0){
-            Intent intent= new Intent(context,WondersActivity.class);
+            Intent intent= new Intent(context, WondersActivity.class);
             context.startActivity(intent);
             }
             else if(position==1){
-                Intent intent= new Intent(context,FermiActivity.class);
+                Intent intent= new Intent(context, FermiActivity.class);
                 context.startActivity(intent);
             }
 
